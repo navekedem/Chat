@@ -3,8 +3,14 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
 
 ## Running the project
-*open app in visual studio code
-*install 
+*download or clone project.
+*open app with code editor(visual studio code).
+*run ng-build if it dosent work run command - npm install --save-dev @angular-devkit/build-angular.
+*update -- all.
+*run ng build again.
+*run ng serve --open.
+*open new terminal window.
+*npm run start:server.
 
 
 ## Development server
