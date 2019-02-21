@@ -1,0 +1,29 @@
+.formCard {
+  border: 1px solid black;
+  width: 40%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: darkgray;
+}
+.imageUpload{
+  text-align: center;
+  margin-top: 1rem;
+}
+.userName{
+  text-align : center;
+}
+h2 {
+  text-align: center;
+}
+.submitButton{
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+p{
+  font-size: 12px
+}
+.warning{
+  color: red;
+}

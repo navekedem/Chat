@@ -1,0 +1,19 @@
+<div class="formCard">
+  <h2>Sign In</h2>
+  <form #userForm="ngForm" (ngSubmit)="signIn(userForm)" ngNativeValidate>
+    <div class="userName">
+      <input type="text" name="userName" required ngModel placeholder="User name" >
+      
+    </div>
+    <div class="imageUpload">
+      <label><p>Add Image Source For Your Avatar</p></label>
+      <input type="text" ngModel name="imagePath" placeholder="Image Source Avatar">
+    </div>
+    <div class="submitButton">
+
+      <input type="submit" value="Sign In">
+    </div>
+
+   </form>
+</div>
+

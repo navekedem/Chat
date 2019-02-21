@@ -1,0 +1,31 @@
+<div class="chat-window">
+  <header>
+    <h1>Chat Room</h1>
+  </header>
+  <section class="room">
+    <ul class="message-list">
+      <li class="user-message" *ngFor="let message of messages">
+        <div class="container">
+          <img [src]="message.imagePath" alt="Avatar" style="width:100%;" />
+          <p>{{ message.userName }}</p>
+          <p class="text">{{ message.message }}</p>
+          <span class="time-right">Time: {{ message.sendTime }}</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <div class="new-message">
+    <form #messageForm="ngForm" (ngSubmit)="sendMessage(messageForm)">
+      <input
+        placeholder="Type a message"
+        type="text"
+        name="message"
+        ngModel
+        required
+      />
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</div>
+
+
