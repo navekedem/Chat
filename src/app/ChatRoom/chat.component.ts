@@ -18,6 +18,7 @@ export class ChatComponent implements OnInit {
   messages: Message[] = [];
 
   constructor(private chatService: ChatService){
+    
     this.chatService.updateClientsOnNewMessage().subscribe(newMessage => {
       this.messages.push(newMessage);
     });
